@@ -14,8 +14,13 @@
   },
   "orig_nbformat": 2,
   "kernelspec": {
-   "name": "python2",
-   "display_name": "Python 2"
+   "name": "Python 2.7.17 64-bit",
+   "display_name": "Python 2.7.17 64-bit",
+   "metadata": {
+    "interpreter": {
+     "hash": "0ef3be7f0c0b8459529ee79533840b5b73ae5f82458da6e33134bc1d9f61d8b6"
+    }
+   }
   }
  },
  "nbformat": 4,
@@ -38,7 +43,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 52,
+   "execution_count": 9,
    "metadata": {},
    "outputs": [
     {
@@ -75,7 +80,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 53,
+   "execution_count": 12,
    "metadata": {},
    "outputs": [
     {
@@ -87,11 +92,9 @@
     }
    ],
    "source": [
-    "import emoji\n",
-    "\n",
     "temp_one = emoji.emojize('I have no idea what is happening in quantum... :sweat_smile:', use_aliases=True)\n",
-    "print(temp)\n",
-    "print(emoji.demojize(temp))\n",
+    "print(temp_one)\n",
+    "print(emoji.demojize(temp_one))\n",
     "\n",
     "print(\"\")\n",
     "\n",
@@ -114,18 +117,6 @@
    "metadata": {}
   },
   {
-   "cell_type": "code",
-   "execution_count": 54,
-   "metadata": {},
-   "outputs": [
-    {
-     "output_type": "stream",
-     "name": "stdout",
-     "text": [
-      "🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n"
-     ]
-    }
-   ],
    "source": [
     "circle_blue = emoji.emojize(':large_blue_circle:', use_aliases=True)\n",
     "circle_red = emoji.emojize(':red_circle:',  use_aliases=True)\n",
@@ -134,7 +125,19 @@
     "    print(circle_blue)\n",
     "    print(circle_red)\n",
     "\n",
-    "# If you scroll fast enough the circles turn purple"
+    "# If you scroll fast enough the circles will turn purple"
+   ],
+   "cell_type": "code",
+   "metadata": {},
+   "execution_count": 13,
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n"
+     ]
+    }
    ]
   },
   {
@@ -142,9 +145,7 @@
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-   "source": [
-    "I have no idea why this is not being displayed on GitHub"
-   ]
+   "source": []
   }
  ]
 }
