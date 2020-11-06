@@ -23,7 +23,8 @@
  "cells": [
   {
    "source": [
-    "# Lab Seven - Playing with PIP\n"
+    "# Lab Seven - Playing with PIP\n",
+    "---\n"
    ],
    "cell_type": "markdown",
    "metadata": {}
@@ -37,22 +38,32 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 52,
    "metadata": {},
    "outputs": [
     {
-     "output_type": "error",
-     "ename": "SyntaxError",
-     "evalue": "invalid syntax (<ipython-input-6-9587347a4624>, line 3)",
-     "traceback": [
-      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-6-9587347a4624>\"\u001b[0;36m, line \u001b[0;32m3\u001b[0m\n\u001b[0;31m    print(emoji.emojize('I have no idea what is happening: sweat_smile')\u001b[0m\n\u001b[0m                                                                        ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "I have no idea what is happening in quantum... 😅\n\nTo Do List:\n✅ - Homework\n✅ - Laundry\n⬛ - Dishes\n\nI am 2️⃣1️⃣ years old\n"
      ]
     }
    ],
    "source": [
     "import emoji\n",
     "\n",
-    "print(emoji.emojize('I have no idea what is happening: sweat_smile'))"
+    "print(emoji.emojize('I have no idea what is happening in quantum... :sweat_smile:', use_aliases=True))\n",
+    "\n",
+    "print(\"\")\n",
+    "\n",
+    "print(\"To Do List:\")\n",
+    "print(emoji.emojize(':white_check_mark: - Homework',  use_aliases=True))\n",
+    "print(emoji.emojize(':white_check_mark: - Laundry',  use_aliases=True))\n",
+    "print(emoji.emojize(':black_large_square: - Dishes',  use_aliases=True))\n",
+    "\n",
+    "print(\"\")\n",
+    "\n",
+    "print(emoji.emojize('I am :two::one: years old', use_aliases=True))"
    ]
   },
   {
@@ -64,11 +75,35 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 53,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "I have no idea what is happening in quantum... 😅\nI have no idea what is happening in quantum... :grinning_face_with_sweat:\n\nI am 2️⃣1️⃣ years old\nI am :keycap_2::keycap_1: years old\n\n✅\n:white_heavy_check_mark:\n"
+     ]
+    }
+   ],
    "source": [
-    "python"
+    "import emoji\n",
+    "\n",
+    "temp_one = emoji.emojize('I have no idea what is happening in quantum... :sweat_smile:', use_aliases=True)\n",
+    "print(temp)\n",
+    "print(emoji.demojize(temp))\n",
+    "\n",
+    "print(\"\")\n",
+    "\n",
+    "temp_two = emoji.emojize('I am :two::one: years old', use_aliases=True)\n",
+    "print(temp_two)\n",
+    "print(emoji.demojize(temp_two))\n",
+    "\n",
+    "print(\"\")\n",
+    "\n",
+    "temp_three = emoji.emojize(':white_check_mark:',  use_aliases=True)\n",
+    "print(temp_three)\n",
+    "print(emoji.demojize(temp_three))\n"
    ]
   },
   {
@@ -80,11 +115,35 @@
   },
   {
    "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n🔵\n🔴\n"
+     ]
+    }
+   ],
+   "source": [
+    "circle_blue = emoji.emojize(':large_blue_circle:', use_aliases=True)\n",
+    "circle_red = emoji.emojize(':red_circle:',  use_aliases=True)\n",
+    "\n",
+    "for x in range(50):\n",
+    "    print(circle_blue)\n",
+    "    print(circle_red)\n",
+    "\n",
+    "# If you scroll fast enough the circles turn purple"
+   ]
+  },
+  {
+   "cell_type": "code",
    "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
-    "python"
+    "I have no idea why this is not being displayed on GitHub"
    ]
   }
  ]
