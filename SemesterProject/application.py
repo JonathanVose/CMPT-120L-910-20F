@@ -25,3 +25,5 @@ def cv():
 @app.route('/home/contact_info')
 def contact_info():
     return render_template("contact_info.html")
+
+hello = hello 
