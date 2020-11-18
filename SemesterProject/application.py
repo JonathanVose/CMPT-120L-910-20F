@@ -6,7 +6,7 @@ import logging
 # %(asctime)s— The timestamp as a string. %(levelname)s—The logging level as a string.
 # %(name)s—The logger name as a string. %(threadname)s—The thread name as a string.
 # %(message)s—The log message.
-logging.basicConfig(level = logging.DEBUG, format = f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
+logging.basicConfig(level = logging.DEBUG, format = f'%(asctime)s %(levelname)s : %(message)s')
 
 app = Flask(__name__)
 
@@ -19,26 +19,32 @@ def index():
     log.warning('this is a WARNING message ')
     log.error('this is an ERROR message ')
     log.critical('this is a CRITICAL message ')
+    log.info('the user traveled to the index page')
     return render_template("index.html")
 
 @app.route('/index/home')
 def home():
+    log.info('the user traveled to the home page')
     return render_template("home.html")
 
 @app.route('/index/home/about_me')
 def about_me():
+    log.info('the user traveled to the about_me page')
     return render_template("about_me.html")
 
 @app.route('/index/home/travel')
 def travel():
+    log.info('the user traveled to the travel page')
     return render_template("travel.html")
 
 @app.route('/index/home/cv')
 def cv():
+    log.info('the user traveled to the cv page')
     return render_template("cv.html")
 
 @app.route('/index/home/contact_info')
 def contact_info():
+    log.info('the user traveled to the contact_info page')
     return render_template("contact_info.html")
 
-Hello = hello
+
