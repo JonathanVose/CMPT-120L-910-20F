@@ -35,16 +35,19 @@ def about_me():
 @app.route('/index/home/travel')
 def travel():
     log.info('the user traveled to the travel page')
+    log.warning('the travel page is not done')
     return render_template("travel.html")
 
 @app.route('/index/home/cv')
 def cv():
     log.info('the user traveled to the cv page')
+    log.warning('the cv page is not done')
     return render_template("cv.html")
 
 @app.route('/index/home/contact_info')
 def contact_info():
     log.info('the user traveled to the contact_info page')
+    log.warning('the contact_info page is not done')
     return render_template("contact_info.html")
 
 
