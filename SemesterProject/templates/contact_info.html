@@ -1,21 +1,54 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
+<!-- Header -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- This is where you link the CSS file -->
-    <link rel="stylesheet" href="style.css">
-    <title>Contact Information</title>
+<title>Contact Information</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+<!-- Style information -->
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg 
+{
+    background-image: url('https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95d09002a.png');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+
+<!-- Center of the page (container to hold my information) -->
 <body>
-    <!-- Your Content Goes Here!!! -->
-    <h1>This is a Header 1</h1>
-    <p>This is a paragraph</p>
-    <ol>
-        <li>This is an ordered list</li>
-    </ol>
-    <ul>
-        <li>This is an unordered list</li>
-    </ul>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-black">
+    <div class="w3-display-middle">
+        <h1 class="w3-jumbo w3-animate-top">Contact Information</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:40%">
+        <p class="w3-large w3-center">Email: Jonathan.vose1@marist.edu</p>
+        <p class="w3-large w3-center">Phone Number: (484)123-4567</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center">
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <h3> <a href="{{ url_for('home')}}"  class="w3-bar-item w3-button w3-padding"><em class="fa fa-th-large fa-fw w3-margin-right"></em>Home</a> </h3>
+        </div>
+        <div class="w3-third">
+            <h3><a href="{{ url_for('about_me')}}"  class="w3-bar-item w3-button w3-padding"><em class="fa fa-th-user fa-fw w3-margin-right"></em>About Me</a></h3>
+        </div>
+        <div class="w3-third">
+            <h3><a href="{{ url_for('travel')}}" class="w3-bar-item w3-button w3-padding"><em class="fa fa-user fa-fw w3-margin-right"></em>Travel</a> </h3>
+        </div>
+    </div>
+
 </body>
 </html>

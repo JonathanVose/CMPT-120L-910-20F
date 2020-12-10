@@ -1,0 +1,9 @@
+How to start my webpage
+
+1) In the SemesterProject folder open up a terminal
+2) Enter the following code into the terminal to assign the application to flask
+    a) export FLASK_APP=application.py
+4) Enter the following code into the terminal to create the server
+    a) flask run
+5) Once you have executed "flask run" a link will pop up, which you will click to go to the project
+6) Enjoy the project :D 

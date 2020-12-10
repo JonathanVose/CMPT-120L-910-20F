@@ -12,6 +12,7 @@ app = Flask(__name__)
 
 log = create_logger(app)
 
+# Initiation of logging on index page
 @app.route('/')
 def index():
     log.debug('this is a DEBUG message ')
@@ -19,35 +20,36 @@ def index():
     log.warning('this is a WARNING message ')
     log.error('this is an ERROR message ')
     log.critical('this is a CRITICAL message ')
+    # logging message
     log.info('the user traveled to the index page')
     return render_template("index.html")
 
+# Home page
 @app.route('/index/home')
 def home():
+    # logging message
     log.info('the user traveled to the home page')
     return render_template("home.html")
 
+# About me page
 @app.route('/index/home/about_me')
 def about_me():
+    # logging message
     log.info('the user traveled to the about_me page')
     return render_template("about_me.html")
 
+# Travel page
 @app.route('/index/home/travel')
 def travel():
+    # logging message
     log.info('the user traveled to the travel page')
-    log.warning('the travel page is not done')
     return render_template("travel.html")
 
-@app.route('/index/home/cv')
-def cv():
-    log.info('the user traveled to the cv page')
-    log.warning('the cv page is not done')
-    return render_template("cv.html")
-
+# Contact information page
 @app.route('/index/home/contact_info')
 def contact_info():
+    # logging message
     log.info('the user traveled to the contact_info page')
-    log.warning('the contact_info page is not done')
     return render_template("contact_info.html")
 
 

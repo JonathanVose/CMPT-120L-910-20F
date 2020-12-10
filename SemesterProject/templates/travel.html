@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Header -->
+<head>
+<title>Travel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!-- Title -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+<img class="w3-image" src="https://ww2.kqed.org/app/uploads/sites/10/2020/07/plane.jpg" alt="Picture" width="1500" height="800">
+<div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><strong>Travel</strong></span> </h1>
+</div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+
+<!-- Overview -->
+<div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Overview</h3>
+    <p>
+        Throughout my life, I have traveled to over six different countries and explored most of the United States. 
+        When I was younger, my dad would always talk about his adventures when he was younger. Hearing his stories instilled a passion for traveling in me. I
+        think the most amazing place that I have visited thus far would be Paris. The atmosphere, culture, and community were so incredible. 
+        Even though I have visited a variety of different places, I would love to travel to Japan with my best friend (she was born in Japan).
+    </p>
+</div>
+
+<!-- Destinations -->
+<div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateParis_Heroshutterstock_112137761.jpg" alt="Paris" style="width:100%">
+        <h3>Paris</h3>
+        <p class="w3-opacity">Summer 2019</p>
+        <p>Last year I completed an attachment course at Marist where I was able to travel to Paris for two weeks.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Czech%20Republic/Prague/prague-main-image.jpg" alt="Prague" style="width:100%">
+        <h3>Prague</h3>
+        <p class="w3-opacity">Summer 2019</p>
+        <p>After completing my summer research project at Marist, I went to Prague for a week with my family.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="https://www.cityam.com/wp-content/uploads/2020/02/London_Tower_Bridge_City.jpg" alt="London" style="width:100%">
+        <h3>London</h3>
+        <p class="w3-opacity">Summer 2018</p>
+        <p>My family decided to travel to London for our first European vacation.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="https://www.nationalgeographic.com/content/dam/travel/Guide-Pages/north-america/caribbean/costa-rica/costa-rica-travel.jpg" alt="Costa Rica" style="width:100%">
+        <h3>Costa Rica</h3>
+        <p class="w3-opacity">Summer 2016</p>
+        <p>My family stayed in a treehouse when we vistied Costa Rica, which was an incredible experience.</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center">
+<div class="w3-row-padding">
+    <div class="w3-third">
+        <h3> <a href="{{ url_for('home')}}"  class="w3-bar-item w3-button w3-padding"><em class="fa fa-th-large fa-fw w3-margin-right"></em>Home</a> </h3>
+    </div>
+    <div class="w3-third">
+        <h3><a href="{{ url_for('about_me')}}" class="w3-bar-item w3-button w3-padding"><em class="fa fa-user fa-fw w3-margin-right"></em>About Me</a> </h3>
+    </div>
+    <div class="w3-third">
+        <h3><a href="{{ url_for('contact_info')}}"  class="w3-bar-item w3-button w3-padding"><em class="fa fa-envelope fa-fw w3-margin-right"></em>Contact</a></h3>
+    </div>
+</div>
+
+</body>
+
+</html>
+

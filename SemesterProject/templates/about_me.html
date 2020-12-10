@@ -2,150 +2,133 @@
 
 <html lang="en">
 
+<!-- Header -->
 <head>
 <title>About Me</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
+<!-- Style information -->
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", Arial, sans-serif}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg 
+{
+background-position: center;
+background-repeat: no-repeat;
+background-image: url('https://pbs.twimg.com/profile_images/1311526136132907008/HnTylbjG_400x400.jpg');
+background-size: cover;
+min-height: 100%;
+}
 </style>
 
-<body class="w3-light-grey">
+<body>
 
+<!-- This is required to insert a picture on the left side of the page -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+</nav>
 
-<div class="w3-content" style="max-width:1400px">
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
 
-
-<header class="w3-container w3-center w3-padding-32"> 
-    <h1><strong>Jonathan Vose</strong></h1>
-    <p>~ All about me ~</p>
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><strong>Jonathan Vose</strong></h1>
+    <p>About Me</p>
 </header>
 
-<div class="w3-row">
+<!-- Favorite things section -->
+<div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">My Favorite Things</h2>
+    <hr class="w3-opacity">
 
-
-<div class="w3-col l8 s12">
-
-<div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-        <h3><strong>Background</strong></h3>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-half">
+        <img src="https://m.media-amazon.com/images/I/A1S3UYUELZL._SS500_.jpg" alt="image" style="width:100%">
+        <img src="https://images.genius.com/cf1325b26e2b5e4cc70a317234d93565.1000x1000x1.jpg" alt="image" style="width:100%">
+        <img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="image" style="width:100%">
+        <img src="https://cdn11.bigcommerce.com/s-8wy6p2/images/stencil/1500x1000/uploaded_images/article.png?t=1575561837" alt="image" style="width:100%">
     </div>
-    <div class="w3-container">
-        <p>
-            I was born in Philadelphia and raised in Allentown Pennsylvania. My family is relatively small (just me, my brother, and my mom). However, we have two pets. 
-            My cat's name is Christmas, and our dog's name is KD. My cat is without a doubt my favorite. 
-            Fun fact: my brother is almost exactly one year younger than me and goes to Temple University. 
-            Even though we are only a year apart, we are completely differnet people.
 
-            I absolutely love music and have been playing the piano since I was in middle school. Although, I don't play as much now. 
-            However, my interest in music led me to join my high school's theater program. I was actively involved in my schools theater program for almost four years, where I worked behind the scenes (I am a horrible singer). 
-            Aside from music, I love snowboarding, swimming, and traveling.
-        </p>
+    <div class="w3-half"> 
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51rf5f8xcWL.jpg" alt="image" style="width:100%">
+        <img src="https://akns-images.eonline.com/eol_images/Entire_Site/20201012/rs_634x793-201112065724-634-American-Horror-Stories-LT-111220-FX.jpg?fit=around%7C634:auto&output-quality=90&crop=634:auto;center,top" alt="image" style="width:100%">
+        <img src="https://d1ymz67w5raq8g.cloudfront.net/Pictures/1024x536/4/1/6/17416_3organicchemistrybackground_619603.jpg" alt="image" style="width:100%">
     </div>
-</div>
-
-<hr>
-
-<div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-        <h3><strong>Research</strong></h3>
-    </div>
-    <div class="w3-container">
-        <p>
-            During the summer of my Junior year I obtained my first research internship at Marist College.
-            My internship with Dr. Fitzgerald focused on the analysis of volatile organic compounds produced during the malting of barley with a portable GCMS to determine if volatile compounds can be used for the early detection of barley contaminated with Fusarium Graminearum.
-            My Research with Dr. Fitzgerald led to my first publication in the Journal of the American Society of Brewing Chemists this year.
-            Currently, I am working with Dr. Checchi to explore the underlying regulatory mechanisms that control chromatin dynamics. The primary focus of the Checchi group is to prevent the mutation of chromosomes that could potentially be transmitted to offspring using Caenorhabditis elegans as a model.
-            Within the Checchi group, my project is focused on the determination of whether or not the absence of MET-2 modulates the localization of LET-418 in response to the damage of DNA. 
-        </p>
     </div>
 </div>
 
-<hr>
+<!-- About Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>
+        My name is Jonathan Vose and I am a senior at Marist College and a member of the Honors Program. Additionally, I am a Biochemistry major (Chemistry major with a concentration in Biochemistry).
+        I will be applying to Chemistry/Biochemistry Ph.D. programs this application cycle. After obtaining my Ph.D., I want to work in the pharmecutical industry, where I will work on the development of novel therapeutics.
+        I was born in Philadelphia and raised in Allentown Pennsylvania. My family is relatively small (just me, my brother, and my mom). However, we have two pets. 
+        My cat's name is Christmas, and our dog's name is KD. My cat is without a doubt my favorite. 
+        Fun fact: my brother is almost exactly one year younger than me and goes to Temple University. 
+        Even though we are only a year apart, we are completely differnet people.
+        I absolutely love music and have been playing the piano since I was in middle school. Although, I don't play as much now. 
+        However, my interest in music led me to join my high school's theater program. I was actively involved in my schools theater program for almost four years, where I worked behind the scenes (I am a horrible singer). 
+        Aside from music, I love snowboarding, swimming, and traveling.
 
-<div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-        <h3><strong>Quick Facts</strong></h3>
+<!-- Skills Section -->
+    </p>
+    <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">Chemistry</p>
+    <div class="w3-light-grey">
+    <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
     </div>
-    <div class="w3-container">
-        <p>
-            I am 22 years old<br>
-            I am 5'11"<br>
-            I have brown eyes<br>
-            I have traveled to 6 countries<br>
-            I work for the office of Admission at Marist<br>
-            I won the Marist College ACS analytical chemistry award<br>
-            I was a bartender for a year<br>
-            I have no idea what I am doing!<br>
-        </p>
+    <p class="w3-wide">Python</p>
+    <div class="w3-light-grey">
+    <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
     </div>
-</div>
+    <p class="w3-wide">Piano</p>
+    <div class="w3-light-grey">
+    <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div><br>
 
-<hr> 
-
-</div>
-
-
-<div class="w3-col l4">
-    <div class="w3-card w3-margin w3-margin-top">
-    <div class="w3-container w3-white">
-        <h4><strong>Basic Information</strong></h4>
-        <p>
-            I am a senior at Marist College and a member of the Honors Program. Additionally, I am a Biochemistry major (Chemistry major with a concentration in Biochemistry).
-            I will be applying to Chemistry/Biochemistry Ph.D. programs this application cycle. After obtaining my Ph.D., I want to work in the pharmecutical industry, where I will work on the development of novel therapeutics.
-        </p>
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">22</span><br>
+        Age
     </div>
-</div>
-
-<hr>
-
-<div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-        <h4><strong>Favorites</strong></h4>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5'11"</span><br>
+        Height
     </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-        <li class="w3-padding-16">
-        <span class="w3-large">Musician</span><br>
-        <span>Mindchatter</span>
-        </li>
-        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <span class="w3-large">Song</span><br>
-        <span>Woo! By: Remi Wolf</span>
-        </li>
-        <li class="w3-padding-16">
-        <span class="w3-large">Food</span><br>
-        <span>Sushi</span>
-        </li> 
-        <li class="w3-padding-16">
-        <span class="w3-large">Book</span><br>
-        <span>The Bluest Eye</span>
-        </li>   
-        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <span class="w3-large">TV Show</span><br>
-        <span>American Horror Story</span>
-        </li> 
-        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <span class="w3-large">Destination</span><br>
-        <span>Paris, France</span>
-        </li>
-        <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <span class="w3-large">Class</span><br>
-        <span>Organic Chemistry</span>
-        </li>
-        </ul>
-</div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">7</span><br>
+        Countries Visited
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">38</span><br>
+        States Visited
+    </div>
+    </div>
 
-<hr> 
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center">
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <h3> <a href="{{ url_for('home')}}"  class="w3-bar-item w3-button w3-padding"><em class="fa fa-th-large fa-fw w3-margin-right"></em>Home</a> </h3>
+        </div>
+        <div class="w3-third">
+            <h3><a href="{{ url_for('travel')}}" class="w3-bar-item w3-button w3-padding"><em class="fa fa-user fa-fw w3-margin-right"></em>Travel</a> </h3>
+        </div>
+        <div class="w3-third">
+            <h3><a href="{{ url_for('contact_info')}}"  class="w3-bar-item w3-button w3-padding"><em class="fa fa-envelope fa-fw w3-margin-right"></em>Contact</a></h3>
+        </div>
+    </div>
+</footer>
 
 </div>
-
-</div><br>
-
-</div>
-
 </body>
-
 </html>

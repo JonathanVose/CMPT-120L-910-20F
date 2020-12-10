@@ -1,12 +1,15 @@
+
+<!-- The header templete stores the buttons for the home page -->
 <div class = "w3-content" style = "max-width:1500px">
+    <!-- Animate top has the information slide in from the top to the center of the page -->
     <header class = "w3-panel w3-center w3-opacity w3-animate-top" style="padding:180px 16px"> 
         <h1><strong>Jonathan Vose</strong></h1>
     <div class= "w3-padding-32">
+        <!-- Buttons on the home page -->
         <div class="w3-bar w3-border">
             <a href = "{{ url_for('about_me')}}" class = "w3-bar-item w3-button">About Me</a>
             <a href = "{{ url_for('travel')}}" class = "w3-bar-item w3-button w3-light-grey">Travel</a>
-            <a href = "{{ url_for('cv')}}" class = "w3-bar-item w3-button">Curriculum Vitae</a>
-            <a href = "{{ url_for('contact_info')}}" class = "w3-bar-item w3-button w3-light-grey">Contact Information</a>
+            <a href = "{{ url_for('contact_info')}}" class = "w3-bar-item w3-button">Contact Information</a>
         </div>
     </div>
     </header>
